@@ -9,7 +9,7 @@
             
             <%= @pin.description %><br/>
           
-          <%= @pin.user.name %><br/>
+          <strong><%= @pin.user.name %><br/></strong>
           
           <% if @pin.user == current_user %>
             <%= link_to 'Edit', edit_pin_path(@pin) %> |
